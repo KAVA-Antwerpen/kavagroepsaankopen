@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<menu>
+  <item>
+    <path>civicrm/import-groepsaankopen</path>
+    <page_callback>CRM_Kavagroepsaankopen_Form_Import</page_callback>
+    <title>Importeren van groepsaankopen</title>
+    <access_arguments>access CiviCRM</access_arguments>
+  </item>
+</menu>

@@ -16,7 +16,7 @@ class CRM_Kavagroepsaankopen_Import {
     $numImported = 0;
     $numSkipped = 0;
     $colIndexes = [];
-    while (($data = fgetcsv($f, 10000, ",")) !== FALSE) {
+    while (($data = fgetcsv($f, 10000, ";")) !== FALSE) {
       if ($i == 0) {
         $colIndexes = self::validateHeader($data);
       }
