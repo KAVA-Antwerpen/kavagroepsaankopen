@@ -149,7 +149,7 @@ class CRM_Kavagroepsaankopen_Import {
 
     $contactId = self::getContactIdFromApb($data[$colIndexes['apb']]);
     if (!$contactId) {
-      echo 'Could not find contact with APB number = ' . $data[$colIndexes['apb']] . " on line $lineNumber\n";
+      CRM_Core_Session::setStatus('Could not find contact with APB number = ' . $data[$colIndexes['apb']] . " on line $lineNumber", '', 'error');
       return FALSE;
     }
 
